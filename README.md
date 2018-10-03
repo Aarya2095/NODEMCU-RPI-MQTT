@@ -44,7 +44,6 @@ RPI is set as a BROKER.
 
 .........................................
 
-REFERENCES>
-1)https://www.hackster.io/ruchir1674/raspberry-pi-talking-to-esp8266-using-mqtt-ed9037
+
 
 
