@@ -23,14 +23,15 @@ WiFiClient client;
 // Setup the mqtt client class
 
 Adafruit_MQTT_Client mqtt(&client, MQTT_SERVER, MQTT_PORT, MQTT_USERNAME, MQTT_PASSWORD); 
-/****************************** Feeds ***************************************/ 
+
+
 // Setup a feed  for publishing. 
 
 Adafruit_MQTT_Publish dht_led = Adafruit_MQTT_Publish(&mqtt, MQTT_USERNAME "/leds/dht"); 
 
 // Setup a feed for subscribtion
-Adafruit_MQTT_Subscribe esp8266_led = Adafruit_MQTT_Subscribe(&mqtt, MQTT_USERNAME "/leds/esp8266"); 
-/*************************** Sketch Code ************************************/ 
+Adafruit_MQTT_Subscribe esp8266_led = Adafruit_MQTT_Subscribe(&mqtt, MQTT_USERNAME "/leds/esp88266"); 
+
 void MQTT_connect(); 
 
 void setup() { 
@@ -92,7 +93,6 @@ float h = dht.readHumidity();
   String humidity = String(h);
 
 
-  // Prepare a JSON payload string
   String payload = "";
   payload += "\"temperature\":"; payload += temperature; payload += ",";
   payload += "\"humidity\":"; payload += humidity;
