@@ -1,0 +1,8 @@
+MQ135 :
+
+Library :You can find the library here: https://github.com/GeorgK/MQ135
+
+
+1) Caliberate MQ135 : for calibrating the sensor upload the  given code and let it run for 12 to 24 hours and then get the RZERO value.
+
+After getting the RZERO value. Put the RZERO value in the library file you downloaded "MQ135.h"
